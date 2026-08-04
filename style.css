@@ -1,0 +1,152 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border-radius: 12px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2d6a4f;
+    margin-bottom: 30px;
+}
+
+.top-bar {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Buttons */
+.btn-add {
+    display: inline-block;
+    background-color: #40916c;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-add:hover { 
+    background-color: #2d6a4f; 
+    transform: translateY(-1px);
+}
+
+.btn-cancel {
+    text-decoration: none;
+    color: #666;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.btn-edit { 
+    color: #1b4332; 
+    text-decoration: none; 
+    margin-right: 15px; 
+    font-weight: bold; 
+}
+
+.btn-delete { 
+    color: #d90429; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+.btn-edit:hover, .btn-delete:hover {
+    text-decoration: underline;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: #fff;
+}
+
+th, td {
+    padding: 18px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #444;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+tr:hover { 
+    background-color: #f1f8f5; 
+}
+
+/* Form Styling (for add.php and edit.php) */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #40916c;
+}
+
+/* Watermark Section */
+.watermark {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    font-style: italic;
+}
+
+.watermark span {
+    color: #2d6a4f;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
